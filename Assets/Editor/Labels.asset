@@ -12,9 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Labels
   m_EditorClassIdentifier: Assembly-CSharp-Editor::Labels/FoldData
-  infos:
-  - label: 
-    labelCount: 0
-    isShow: 0
-    isFolded: 0
-    isRename: 0
+  infos: []

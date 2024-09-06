@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using LogInfo;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -32,10 +33,11 @@ public enum CacheMode
 
 public class AssetLoader : Singleton<AssetLoader>
 {
-    public LoadLinker loadLinker;
+    const string linkName    = "AssetLinker";
+    static string linkerDest = $"{Application.persistentDataPath}/{linkName}";
+    static string linkerName = $"{linkName}.json";
 
-    static string linkerDest = $"{Application.persistentDataPath}/AssetLinker";
-    static string linkerName = "AssetLinker.json";
+    public LoadLinker loadLinker;
 
     string ToStreamPath(string path)
     {
@@ -168,6 +170,12 @@ public class AssetLoader : Singleton<AssetLoader>
                 }
                 loadLinker.dicts.Remove(info.path);
             }
+
+            loadLinker.lists = new List<LinkInfo>(loadLinker.dicts.Values);
+
+            Info.Log("更新资源完成");
+            Info.Log("cachePath:"+ cachePath);
+            Info.Log("loadLinker:" + JsonUtility.ToJson(loadLinker));
             // 更新配置文件
             File.WriteAllText(cachePath, JsonUtility.ToJson(loadLinker));
         }
