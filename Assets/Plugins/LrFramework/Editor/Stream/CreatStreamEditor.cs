@@ -104,10 +104,6 @@ public class CreatStreamEditor : Editor
         }
 
         File.WriteAllText(savePath, origin);
-
-        AssetDatabase.ImportAsset(savePath);
-
-        AssetDatabase.Refresh();
     }
 
     public static List<string> GetPathFileNames()

@@ -40,6 +40,24 @@ public class StreamableIO : MonoBehaviour
         return jsonStr;
     }
 
+    public static async Task<string> AsyncReadFiles(string name)
+    {
+        var jsonStr = string.Empty;
+        UnityWebRequest unityWeb = UnityWebRequest.Get($"{streamPath}/{name}{suffix}");
+        await unityWeb.SendWebRequest();
+
+        if (unityWeb.result == UnityWebRequest.Result.ConnectionError || unityWeb.result == UnityWebRequest.Result.ProtocolError)
+        {
+            Debug.LogError("Error reading file: " + unityWeb.error);
+        }
+        else
+        {
+            jsonStr = unityWeb.downloadHandler.text;
+        }
+        return jsonStr;
+    }
+
+
     public static async Task<string> ReadFiles(string name, string path)
     {
         var jsonStr = string.Empty;

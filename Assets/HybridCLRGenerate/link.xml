@@ -5,36 +5,18 @@
     <type fullname="HybridCLR.LoadImageErrorCode" preserve="all" />
     <type fullname="HybridCLR.RuntimeApi" preserve="all" />
   </assembly>
-  <assembly fullname="JsonUI">
+  <assembly fullname="LrFramework">
+    <type fullname="Singleton`1" preserve="all" />
     <type fullname="Streamable" preserve="all" />
     <type fullname="StreamableObject" preserve="all" />
-  </assembly>
-  <assembly fullname="LrFramework">
-    <type fullname="AssetLoader" preserve="all" />
-    <type fullname="Audio.AudioLoadData" preserve="all" />
-    <type fullname="Audio.AudioLoadInfo" preserve="all" />
-    <type fullname="Audio.AudioLoadRes" preserve="all" />
-    <type fullname="Audio.AudioLoadSign" preserve="all" />
-    <type fullname="Audio.AudioLoadType" preserve="all" />
-    <type fullname="AudioMgr" preserve="all" />
-    <type fullname="ChangeEventAttribute" preserve="all" />
-    <type fullname="Debuger" preserve="all" />
-    <type fullname="Extend" preserve="all" />
-    <type fullname="ExtendAttributes" preserve="all" />
-    <type fullname="FuncMethod" preserve="all" />
-    <type fullname="IUnityMes" preserve="all" />
-    <type fullname="InputAttributeExtenders" preserve="all" />
-    <type fullname="InputDelegate" preserve="all" />
-    <type fullname="Singleton`1" preserve="all" />
     <type fullname="Table.Row`1" preserve="all" />
     <type fullname="Table.TableManager" preserve="all" />
     <type fullname="Table.Table`2" preserve="all" />
-    <type fullname="UICall" preserve="all" />
-    <type fullname="UnityDelegateExtend" preserve="all" />
   </assembly>
   <assembly fullname="Main">
-    <type fullname="LoadDll" preserve="all" />
+    <type fullname="LoadHotfix" preserve="all" />
     <type fullname="LoadPanel" preserve="all" />
+    <type fullname="MainLogic" preserve="all" />
   </assembly>
   <assembly fullname="PoolType">
     <type fullname="PoolMgr" preserve="all" />
@@ -45,7 +27,6 @@
     <type fullname="System.Collections.Generic.Stack`1" preserve="all" />
     <type fullname="System.ComponentModel.EditorBrowsableAttribute" preserve="all" />
     <type fullname="System.ComponentModel.EditorBrowsableState" preserve="all" />
-    <type fullname="System.Diagnostics.Stopwatch" preserve="all" />
     <type fullname="System.Net.Dns" preserve="all" />
     <type fullname="System.Net.EndPoint" preserve="all" />
     <type fullname="System.Net.IPAddress" preserve="all" />
@@ -82,7 +63,6 @@
   <assembly fullname="Unity.Addressables">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
     <type fullname="UnityEngine.AddressableAssets.AssetLabelReference" preserve="all" />
-    <type fullname="UnityEngine.AddressableAssets.AssetReference" preserve="all" />
   </assembly>
   <assembly fullname="Unity.ResourceManager">
     <type fullname="UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle`1" preserve="all" />
@@ -98,6 +78,7 @@
     <type fullname="UnityEngine.Debug" preserve="all" />
     <type fullname="UnityEngine.DisallowMultipleComponent" preserve="all" />
     <type fullname="UnityEngine.Events.UnityAction" preserve="all" />
+    <type fullname="UnityEngine.Events.UnityEvent" preserve="all" />
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.HeaderAttribute" preserve="all" />
     <type fullname="UnityEngine.HelpURLAttribute" preserve="all" />
@@ -115,6 +96,7 @@
     <type fullname="UnityEngine.RuntimePlatform" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.LoadSceneMode" preserve="all" />
     <type fullname="UnityEngine.Screen" preserve="all" />
+    <type fullname="UnityEngine.ScreenOrientation" preserve="all" />
     <type fullname="UnityEngine.ScriptableObject" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.TextAsset" preserve="all" />
@@ -122,7 +104,6 @@
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />
     <type fullname="UnityEngine.TooltipAttribute" preserve="all" />
-    <type fullname="UnityEngine.Transform" preserve="all" />
     <type fullname="UnityEngine.Vector2" preserve="all" />
     <type fullname="UnityEngine.Vector2Int" preserve="all" />
     <type fullname="UnityEngine.Vector3" preserve="all" />
@@ -138,27 +119,6 @@
   </assembly>
   <assembly fullname="UnityEngine.JSONSerializeModule">
     <type fullname="UnityEngine.JsonUtility" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEngine.TextRenderingModule">
-    <type fullname="UnityEngine.VerticalWrapMode" preserve="all" />
-  </assembly>
-  <assembly fullname="UnityEngine.UIElementsModule">
-    <type fullname="UnityEngine.UIElements.Align" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Button" preserve="all" />
-    <type fullname="UnityEngine.UIElements.CallbackEventHandler" preserve="all" />
-    <type fullname="UnityEngine.UIElements.ClickEvent" preserve="all" />
-    <type fullname="UnityEngine.UIElements.EventCallback`1" preserve="all" />
-    <type fullname="UnityEngine.UIElements.IStyle" preserve="all" />
-    <type fullname="UnityEngine.UIElements.Label" preserve="all" />
-    <type fullname="UnityEngine.UIElements.PointerEventBase`1" preserve="all" />
-    <type fullname="UnityEngine.UIElements.StyleBackground" preserve="all" />
-    <type fullname="UnityEngine.UIElements.StyleEnum`1" preserve="all" />
-    <type fullname="UnityEngine.UIElements.StyleScale" preserve="all" />
-    <type fullname="UnityEngine.UIElements.TextElement" preserve="all" />
-    <type fullname="UnityEngine.UIElements.TrickleDown" preserve="all" />
-    <type fullname="UnityEngine.UIElements.UIDocument" preserve="all" />
-    <type fullname="UnityEngine.UIElements.UQueryExtensions" preserve="all" />
-    <type fullname="UnityEngine.UIElements.VisualElement" preserve="all" />
   </assembly>
   <assembly fullname="kcp2k">
     <type fullname="kcp2k.ErrorCode" preserve="all" />
@@ -225,7 +185,6 @@
     <type fullname="System.Predicate`1" preserve="all" />
     <type fullname="System.Random" preserve="all" />
     <type fullname="System.Reflection.Assembly" preserve="all" />
-    <type fullname="System.Reflection.MethodInfo" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncStateMachineAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncTaskMethodBuilder" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1" preserve="all" />

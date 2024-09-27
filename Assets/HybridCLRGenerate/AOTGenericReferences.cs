@@ -5,7 +5,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// {{ AOT assemblies
 	public static readonly IReadOnlyList<string> PatchedAOTAssemblyList = new List<string>
 	{
-		"JsonUI.dll",
 		"LrFramework.dll",
 		"System.Core.dll",
 		"System.dll",
@@ -14,7 +13,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		"Unity.ResourceManager.dll",
 		"UnityEngine.CoreModule.dll",
 		"UnityEngine.JSONSerializeModule.dll",
-		"UnityEngine.UIElementsModule.dll",
 		"mscorlib.dll",
 		"protobuf-net.dll",
 	};
@@ -38,7 +36,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>>
 	// System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>
 	// System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Action<UnityEngine.UIElements.RuleMatcher>
 	// System.Action<byte,object>
 	// System.Action<float>
 	// System.Action<int,System.ArraySegment<byte>,byte>
@@ -60,13 +57,11 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.ByReference<ushort>
 	// System.Collections.Generic.ArraySortHelper<Mirror.QueuedMessage>
 	// System.Collections.Generic.ArraySortHelper<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.ArraySortHelper<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.ArraySortHelper<int>
 	// System.Collections.Generic.ArraySortHelper<object>
 	// System.Collections.Generic.ArraySortHelper<ushort>
 	// System.Collections.Generic.Comparer<Mirror.QueuedMessage>
 	// System.Collections.Generic.Comparer<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.Comparer<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.Comparer<int>
 	// System.Collections.Generic.Comparer<object>
 	// System.Collections.Generic.Comparer<ushort>
@@ -105,13 +100,11 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<object,ushort>>
 	// System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<ushort,object>>
 	// System.Collections.Generic.ICollection<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.ICollection<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.ICollection<int>
 	// System.Collections.Generic.ICollection<object>
 	// System.Collections.Generic.ICollection<ushort>
 	// System.Collections.Generic.IComparer<Mirror.QueuedMessage>
 	// System.Collections.Generic.IComparer<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.IComparer<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.IComparer<int>
 	// System.Collections.Generic.IComparer<object>
 	// System.Collections.Generic.IComparer<ushort>
@@ -121,7 +114,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<object,ushort>>
 	// System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<ushort,object>>
 	// System.Collections.Generic.IEnumerable<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.IEnumerable<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.IEnumerable<int>
 	// System.Collections.Generic.IEnumerable<long>
 	// System.Collections.Generic.IEnumerable<object>
@@ -132,7 +124,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<object,ushort>>
 	// System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<ushort,object>>
 	// System.Collections.Generic.IEnumerator<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.IEnumerator<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.IEnumerator<int>
 	// System.Collections.Generic.IEnumerator<long>
 	// System.Collections.Generic.IEnumerator<object>
@@ -142,7 +133,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.IEqualityComparer<ushort>
 	// System.Collections.Generic.IList<Mirror.QueuedMessage>
 	// System.Collections.Generic.IList<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.IList<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.IList<int>
 	// System.Collections.Generic.IList<object>
 	// System.Collections.Generic.IList<ushort>
@@ -155,19 +145,16 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.LinkedListNode<object>
 	// System.Collections.Generic.List.Enumerator<Mirror.QueuedMessage>
 	// System.Collections.Generic.List.Enumerator<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.List.Enumerator<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.List.Enumerator<int>
 	// System.Collections.Generic.List.Enumerator<object>
 	// System.Collections.Generic.List.Enumerator<ushort>
 	// System.Collections.Generic.List<Mirror.QueuedMessage>
 	// System.Collections.Generic.List<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.List<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.List<int>
 	// System.Collections.Generic.List<object>
 	// System.Collections.Generic.List<ushort>
 	// System.Collections.Generic.ObjectComparer<Mirror.QueuedMessage>
 	// System.Collections.Generic.ObjectComparer<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.Generic.ObjectComparer<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.Generic.ObjectComparer<int>
 	// System.Collections.Generic.ObjectComparer<object>
 	// System.Collections.Generic.ObjectComparer<ushort>
@@ -182,13 +169,11 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Collections.Generic.Stack<object>
 	// System.Collections.ObjectModel.ReadOnlyCollection<Mirror.QueuedMessage>
 	// System.Collections.ObjectModel.ReadOnlyCollection<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Collections.ObjectModel.ReadOnlyCollection<UnityEngine.UIElements.RuleMatcher>
 	// System.Collections.ObjectModel.ReadOnlyCollection<int>
 	// System.Collections.ObjectModel.ReadOnlyCollection<object>
 	// System.Collections.ObjectModel.ReadOnlyCollection<ushort>
 	// System.Comparison<Mirror.QueuedMessage>
 	// System.Comparison<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Comparison<UnityEngine.UIElements.RuleMatcher>
 	// System.Comparison<int>
 	// System.Comparison<object>
 	// System.Comparison<ushort>
@@ -254,7 +239,6 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Nullable<ushort>
 	// System.Predicate<Mirror.QueuedMessage>
 	// System.Predicate<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
-	// System.Predicate<UnityEngine.UIElements.RuleMatcher>
 	// System.Predicate<int>
 	// System.Predicate<object>
 	// System.Predicate<ushort>
@@ -330,28 +314,11 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// UnityEngine.ResourceManagement.ResourceManager.CompletedOperation<object>
 	// UnityEngine.ResourceManagement.Util.GlobalLinkedListNodeCache<object>
 	// UnityEngine.ResourceManagement.Util.LinkedListNodeCache<object>
-	// UnityEngine.UIElements.EventBase.<>c<object>
-	// UnityEngine.UIElements.EventBase<object>
-	// UnityEngine.UIElements.EventCallback<object>
-	// UnityEngine.UIElements.EventCallbackFunctor<object>
-	// UnityEngine.UIElements.ObjectPool.<>c<object>
-	// UnityEngine.UIElements.ObjectPool<object>
-	// UnityEngine.UIElements.PointerEventBase<object>
-	// UnityEngine.UIElements.StyleEnum<int>
-	// UnityEngine.UIElements.UQueryState.ActionQueryMatcher<object>
-	// UnityEngine.UIElements.UQueryState.Enumerator<object>
-	// UnityEngine.UIElements.UQueryState.ListQueryMatcher<object,object>
-	// UnityEngine.UIElements.UQueryState<object>
 	// }}
 
 	public void RefMethods()
 	{
-		// System.Void ChangeEventController.InitChangeEvent<object>(object)
-		// System.Void Extend.AddCheckEvent<object>(object)
-		// bool Extend.CheckValue<object,int>(object,int,ushort)
 		// object ProtoBuf.Serializer.Deserialize<object>(System.IO.Stream)
-		// object Streamable.Get<object>()
-		// System.Void Streamable.Register<object>()
 		// System.Void System.Array.Resize<byte>(byte[]&,int)
 		// bool System.Linq.Enumerable.Contains<object>(System.Collections.Generic.IEnumerable<object>,object)
 		// bool System.Linq.Enumerable.Contains<object>(System.Collections.Generic.IEnumerable<object>,object,System.Collections.Generic.IEqualityComparer<object>)
@@ -364,33 +331,32 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Collections.Generic.IEnumerable<object> System.Linq.Enumerable.Where<object>(System.Collections.Generic.IEnumerable<object>,System.Func<object,bool>)
 		// System.Collections.Generic.IEnumerable<int> System.Linq.Enumerable.Iterator<object>.Select<int>(System.Func<object,int>)
 		// System.Collections.Generic.IEnumerable<long> System.Linq.Enumerable.Iterator<object>.Select<long>(System.Func<object,long>)
-		// object System.Reflection.CustomAttributeExtensions.GetCustomAttribute<object>(System.Reflection.MemberInfo)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,FlowGame.<Start>d__3>(System.Runtime.CompilerServices.TaskAwaiter&,FlowGame.<Start>d__3&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LinkerFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter&,LinkerFlow.<Logic>d__4&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,Flow.FlowGame.<StartSync>d__10>(System.Runtime.CompilerServices.TaskAwaiter&,Flow.FlowGame.<StartSync>d__10&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,Flow.StepMachine.<StartSync>d__5>(System.Runtime.CompilerServices.TaskAwaiter&,Flow.StepMachine.<StartSync>d__5&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,PreGoFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter&,PreGoFlow.<Logic>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,SceneFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter&,SceneFlow.<Logic>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,StreamableFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter&,StreamableFlow.<Logic>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<UniRx.Unit>,SceneFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter<UniRx.Unit>&,SceneFlow.<Logic>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,HotfixProgram.<DownLoadInstantiateType>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,HotfixProgram.<DownLoadInstantiateType>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,PreGoFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,PreGoFlow.<Logic>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,FlowGame.<Start>d__3>(System.Runtime.CompilerServices.TaskAwaiter&,FlowGame.<Start>d__3&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LinkerFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter&,LinkerFlow.<Logic>d__4&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Program.<DownLoadInstantiateType>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Program.<DownLoadInstantiateType>d__4&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,Flow.FlowGame.<StartSync>d__10>(System.Runtime.CompilerServices.TaskAwaiter&,Flow.FlowGame.<StartSync>d__10&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,Flow.StepMachine.<StartSync>d__5>(System.Runtime.CompilerServices.TaskAwaiter&,Flow.StepMachine.<StartSync>d__5&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,PreGoFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter&,PreGoFlow.<Logic>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,SceneFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter&,SceneFlow.<Logic>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,StreamableFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter&,StreamableFlow.<Logic>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<UniRx.Unit>,SceneFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter<UniRx.Unit>&,SceneFlow.<Logic>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,HotfixProgram.<DownLoadInstantiateType>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,HotfixProgram.<DownLoadInstantiateType>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,PreGoFlow.<Logic>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,PreGoFlow.<Logic>d__4&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Program.<DownLoadInstantiateType>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Program.<DownLoadInstantiateType>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Mirror.TeamClient.<Cancel>d__14>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Mirror.TeamClient.<Cancel>d__14&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Mirror.TeamClient.<Creat>d__13>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Mirror.TeamClient.<Creat>d__13&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Mirror.TeamClient.<Exit>d__16>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Mirror.TeamClient.<Exit>d__16&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Mirror.TeamClient.<Join>d__15>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Mirror.TeamClient.<Join>d__15&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Mirror.TeamClient.<UpdateTeam>d__19>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Mirror.TeamClient.<UpdateTeam>d__19&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,HotfixProgram.<DownLoadType>d__2<object>>(System.Runtime.CompilerServices.TaskAwaiter<object>&,HotfixProgram.<DownLoadType>d__2<object>&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,HotfixProgram.<DownLoadType>d__3<object>>(System.Runtime.CompilerServices.TaskAwaiter<object>&,HotfixProgram.<DownLoadType>d__3<object>&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Mirror.TeamClient.<WaitServerRespond>d__11<object>>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Mirror.TeamClient.<WaitServerRespond>d__11<object>&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<FlowGame.<Start>d__3>(FlowGame.<Start>d__3&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<HotfixProgram.<DownLoadInstantiateType>d__4>(HotfixProgram.<DownLoadInstantiateType>d__4&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<LinkerFlow.<Logic>d__4>(LinkerFlow.<Logic>d__4&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Program.<DownLoadType>d__2<object>>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Program.<DownLoadType>d__2<object>&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Program.<DownLoadType>d__3<object>>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Program.<DownLoadType>d__3<object>&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<Flow.FlowGame.<StartSync>d__10>(Flow.FlowGame.<StartSync>d__10&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<Flow.StepMachine.<StartSync>d__5>(Flow.StepMachine.<StartSync>d__5&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<PreGoFlow.<Logic>d__4>(PreGoFlow.<Logic>d__4&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<Program.<DownLoadInstantiateType>d__4>(Program.<DownLoadInstantiateType>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<SceneFlow.<Logic>d__4>(SceneFlow.<Logic>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<StreamableFlow.<Logic>d__4>(StreamableFlow.<Logic>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.Start<Mirror.TeamClient.<Cancel>d__14>(Mirror.TeamClient.<Cancel>d__14&)
@@ -398,12 +364,12 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.Start<Mirror.TeamClient.<Exit>d__16>(Mirror.TeamClient.<Exit>d__16&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.Start<Mirror.TeamClient.<Join>d__15>(Mirror.TeamClient.<Join>d__15&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.Start<Mirror.TeamClient.<UpdateTeam>d__19>(Mirror.TeamClient.<UpdateTeam>d__19&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<HotfixProgram.<DownLoadType>d__2<object>>(HotfixProgram.<DownLoadType>d__2<object>&)
-		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<HotfixProgram.<DownLoadType>d__3<object>>(HotfixProgram.<DownLoadType>d__3<object>&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<Mirror.TeamClient.<WaitServerRespond>d__11<object>>(Mirror.TeamClient.<WaitServerRespond>d__11<object>&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,HotfixMain.<Flow>d__2>(System.Runtime.CompilerServices.TaskAwaiter&,HotfixMain.<Flow>d__2&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<Program.<DownLoadType>d__2<object>>(Program.<DownLoadType>d__2<object>&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<Program.<DownLoadType>d__3<object>>(Program.<DownLoadType>d__3<object>&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,MainStep.<StartFlow>d__1>(System.Runtime.CompilerServices.TaskAwaiter&,MainStep.<StartFlow>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,Mirror.TeamClient.<MatchTeam>d__20>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,Mirror.TeamClient.<MatchTeam>d__20&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<HotfixMain.<Flow>d__2>(HotfixMain.<Flow>d__2&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<MainStep.<StartFlow>d__1>(MainStep.<StartFlow>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<Mirror.TeamClient.<MatchTeam>d__20>(Mirror.TeamClient.<MatchTeam>d__20&)
 		// object& System.Runtime.CompilerServices.Unsafe.As<object,object>(object&)
 		// System.Void* System.Runtime.CompilerServices.Unsafe.AsPointer<object>(object&)
@@ -435,9 +401,5 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// object UnityEngine.ResourceManagement.ResourceManager.CreateOperation<object>(System.Type,int,UnityEngine.ResourceManagement.Util.IOperationCacheKey,System.Action<UnityEngine.ResourceManagement.AsyncOperations.IAsyncOperation>)
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<System.Collections.Generic.IList<object>> UnityEngine.ResourceManagement.ResourceManager.ProvideResources<object>(System.Collections.Generic.IList<UnityEngine.ResourceManagement.ResourceLocations.IResourceLocation>,bool,System.Action<object>)
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.ResourceManagement.ResourceManager.StartOperation<object>(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase<object>,UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle)
-		// System.Void UnityEngine.UIElements.CallbackEventHandler.AddEventCategories<object>()
-		// System.Void UnityEngine.UIElements.CallbackEventHandler.RegisterCallback<object>(UnityEngine.UIElements.EventCallback<object>,UnityEngine.UIElements.TrickleDown)
-		// System.Void UnityEngine.UIElements.EventCallbackRegistry.RegisterCallback<object>(UnityEngine.UIElements.EventCallback<object>,UnityEngine.UIElements.TrickleDown,UnityEngine.UIElements.InvokePolicy)
-		// object UnityEngine.UIElements.UQueryExtensions.Q<object>(UnityEngine.UIElements.VisualElement,string,string)
 	}
 }

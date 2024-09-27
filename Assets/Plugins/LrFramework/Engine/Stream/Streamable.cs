@@ -29,7 +29,11 @@ public sealed class Streamable
     {
         foreach (var item in allTypes)
         {
+            #if UNITY_WEBGL
+            var value = await AsyncStreamablePakeage(item);
+            #else
             var value  = StreamablePakeage(item);
+            #endif
             if (value != null)
             {
                 pakeages.Add(item, value);
@@ -56,6 +60,24 @@ public sealed class Streamable
         return  pakeage;
     }
 
+    static async Task<StreamablePakeage> AsyncStreamablePakeage(Type type)
+    {
+        var pakeage = new StreamablePakeage();
+        var jsonStr = await SIO.AsyncReadFiles(type.Name);
+
+        if (string.IsNullOrEmpty(jsonStr))
+        {
+            pakeage.item = Activator.CreateInstance(type) as StreamableObject;
+            SIO.WriteFiles(type.Name, SIO.ToJson(pakeage.item, type));
+        }
+        else
+        {
+            pakeage.item = SIO.FromJson(jsonStr, type) as StreamableObject;
+        }
+
+        pakeage.name = type.Name;
+        return pakeage;
+    }
 
     public static void Save<T>(T obj) where T : StreamableObject
     {

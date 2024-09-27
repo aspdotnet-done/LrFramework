@@ -11,10 +11,10 @@ public class PreGoFlow : IFlowTask
 
     public  async Task Logic()
     {
-     //   var loadHandle = Addressables.LoadAssetsAsync<GameObject>
-                  //     (new AssetLabelReference() { labelString = "preload" }, null);
+        //   var loadHandle = Addressables.LoadAssetsAsync<GameObject>
+        //     (new AssetLabelReference() { labelString = "preload" }, null);
 
-       // await  loadHandle.Task;
-       await Task.CompletedTask;
+        // await  loadHandle.Task;
+        await Task.Delay(1);
     }
 }

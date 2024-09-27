@@ -11,7 +11,7 @@ public class StreamableFlow : IFlowTask
 
     public async Task Logic()
     {
-  
+        Debug.Log("加载Streamable资源包");
         await Streamable.LoadPakeage();
     }
 }
