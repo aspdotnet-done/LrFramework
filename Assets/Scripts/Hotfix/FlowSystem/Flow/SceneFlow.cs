@@ -15,23 +15,10 @@ public class SceneFlow : IFlowTask
     {
         Debug.Log("加载场景");
 
-        await Observable.ToObservable(Progess());
+        await Addressables.LoadSceneAsync("Assets/Scenes/hotfix");
 
+        Debug.Log("场景加载完成");
         await Task.Delay(1000);
     }
 
-    IEnumerator Progess()
-    {
-        var loadHandle = Addressables.LoadSceneAsync("Assets/Scenes/hotfix");
-
-        while (!loadHandle.IsDone)
-        {
-            // LoadWindowMgr.instance.Radio(loadHandle.PercentComplete);
-            yield return 0;
-        }
-        // LoadWindowMgr.instance.Radio(1.0f);
-
-        yield return new WaitForSeconds(1.0f);
-
-    }
 }
