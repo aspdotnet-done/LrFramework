@@ -18,7 +18,6 @@ public class SceneFlow : IFlowTask
         await Addressables.LoadSceneAsync("Assets/Scenes/hotfix");
 
         Debug.Log("场景加载完成");
-        await Task.Delay(1000);
     }
 
 }

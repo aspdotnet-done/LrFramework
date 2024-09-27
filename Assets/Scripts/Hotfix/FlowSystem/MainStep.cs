@@ -34,9 +34,9 @@ public class MainStep : MonoBehaviour
         FlowGame.Clear();
 
         LoadPanel.instance.Title("预加载完毕");
-        await Task.Delay(1000);
+      //  await Task.Delay(1000);
         LoadPanel.instance.Done();
     }
 
-
+    
 }

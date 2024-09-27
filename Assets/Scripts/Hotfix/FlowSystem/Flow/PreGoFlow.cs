@@ -15,6 +15,6 @@ public class PreGoFlow : IFlowTask
         //     (new AssetLabelReference() { labelString = "preload" }, null);
 
         // await  loadHandle.Task;
-        await Task.Delay(1);
+        await Task.CompletedTask;
     }
 }

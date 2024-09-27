@@ -10,10 +10,10 @@ public class TableFlow : IFlowTask
     public int order => 16;
 
 
-    public Task Logic()
+    public async Task Logic()
     {
         Debug.Log("加载Table ");
         Table.TableLib.InitTable();
-        return Task.Delay(1000);
+        await Task.CompletedTask;
     }
 }
