@@ -25,15 +25,15 @@ public class CheckUpdateCatalog :MonoBehaviour
             updateGUI = updateGUI ?? new NeedUpdateGUI();
             remotedAsset = remotedAsset ?? new LoadNewRemotedAsset();
 
-            ///³õÊ¼»¯Addressables
+            ///åˆå§‹åŒ–Addressables
             var init = Addressables.InitializeAsync();
             await init.Task;
-            await Task.Delay(1); //ÊµÀı»¯ºóÒªµÈ´ıÒ»Ö¡------ºÜÖØÒª
+            await Task.Delay(1); //å®ä¾‹åŒ–åè¦ç­‰å¾…ä¸€å¸§------å¾ˆé‡è¦
 
-            /// ¼ì²é¸üĞÂÄÚÈİ
+            /// æ£€æŸ¥æ›´æ–°å†…å®¹
             var updates = Addressables.CheckForCatalogUpdates(false);
             await updates.Task;
-            await Task.Delay(10);//ÊµÀı»¯ºóÒªµÈÒ»»á------ºÜÖØÒª
+            await Task.Delay(10);//å®ä¾‹åŒ–åè¦ç­‰ä¸€ä¼š------å¾ˆé‡è¦
 
             Debug.Log("need Updates:" + updates.Result.Count);
 
@@ -64,7 +64,7 @@ public class CheckUpdateCatalog :MonoBehaviour
                 updateGUI.size = await Addressables.GetDownloadSizeAsync(needMaps).Task;
                 updateGUI.Show();
 
-                Debug.Log($"ÏÂÔØÊı¾İ´óĞ¡£º{ updateGUI.size}");
+                Debug.Log($"ä¸‹è½½æ•°æ®å¤§å°ï¼š{ updateGUI.size}");
                 if (await updateGUI.waitSelect)
                 {
                     await StartCoroutine(IEDownAssetImpl(updateResults));
@@ -126,7 +126,7 @@ public class CheckUpdateCatalog :MonoBehaviour
                 {
                     if (info.HashLocation != null)
                     {
-                        Debug.Log("Ô¶³ÌµØÖ·£º" + info.HashLocation.InternalId);
+                        Debug.Log("è¿œç¨‹åœ°å€ï¼š" + info.HashLocation.InternalId);
                         return info.HashLocation.InternalId;
                     }
                 }

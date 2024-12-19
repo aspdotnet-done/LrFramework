@@ -16,14 +16,14 @@ public class MainLogic : MonoBehaviour
 
     async void Start()
     {
-        Debug.Log("¼ì²â×ÊÔ´ÊÇ·ñÓĞ¸üĞÂ");
+        Debug.Log("æ£€æµ‹èµ„æºæ˜¯å¦æœ‰æ›´æ–°");
 
-        //¼ì²é°æ±¾×ÊÔ´ÊÇ·ñÓĞ¸üĞÂ
+        //æ£€æŸ¥ç‰ˆæœ¬èµ„æºæ˜¯å¦æœ‰æ›´æ–°
        // var   updateCatalog = this.gameObject.AddComponent<CheckUpdateCatalog>();
-        //await updateCatalog.CheckUpdte();
+      //  await updateCatalog.CheckUpdte();
 
-        //³õÊ¼»¯×ÊÔ´¼ÓÔØ
-        //await AssetLoader.instance.Init();
+        //åˆå§‹åŒ–èµ„æºåŠ è½½
+      //  await AssetLoader.instance.Init();
 
 #if CLR
         var hotfix = this.gameObject.AddComponent<LoadHotfix>();

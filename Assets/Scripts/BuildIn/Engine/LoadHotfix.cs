@@ -22,10 +22,10 @@ public class LoadHotfix : MonoBehaviour
 
     public async Task Load()
     {
-        Info.Log("º”‘ÿaot dll");
+        Info.Log("Âä†ËΩΩaot dll");
         await DownLoadLabelDlls(AotDll, aotdllAssets);
 
-        Info.Log("º”‘ÿhot dll");
+        Info.Log("Âä†ËΩΩhot dll");
         await DownLoadLabelDlls(HotDll, hotdllAssets);
 
 
@@ -41,14 +41,14 @@ public class LoadHotfix : MonoBehaviour
             var assembly = Assembly.Load(asset.bytes);
             var program  = assembly.GetType("Program");
 
-            Info.Log("hotfix≥Ã–Ú£∫" + program);
+            Info.Log("hotfixÁ®ãÂ∫èÔºö" + program);
 
             if (program != null)
             {
-                Info.Log(" µ¿˝ªØaot dll");
+                Info.Log("ÂÆû‰æãÂåñaot dll");
                 program.GetMethod("LoadMetadataForAOTAssemblies")?.Invoke(null, null);
 
-                Info.Log(" µ¿˝ªØhot dll");
+                Info.Log("ÂÆû‰æãÂåñhot dll");
                 program.GetMethod("Main")?.Invoke(null, null);
 
                 break;
